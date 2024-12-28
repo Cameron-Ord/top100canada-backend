@@ -16,7 +16,7 @@ func main() {
 
 	handler := handlers.CORS(
 		//allow all origins (FOR NOW)
-		handlers.AllowedOrigins([]string{"localhost"}),
+		handlers.AllowedOrigins([]string{"*"}),
 		handlers.AllowedMethods([]string{"GET"}),
 		handlers.AllowedHeaders([]string{"Content-Type", "application/json"}),
 	)
